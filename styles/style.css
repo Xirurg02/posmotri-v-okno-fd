@@ -19,6 +19,7 @@ html {
   background-color: #1b1919;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 h1,
@@ -58,7 +59,7 @@ ol {
   grid-template-columns: 711px 399px;
   grid-template-areas: "result content__details";
   width: 1140px;
-  height: 534px;
+  min-height: 534px;
   gap: 30px;
   align-items: end;
 }
@@ -79,6 +80,7 @@ ol {
 .result__video {
   width: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .search-form {
@@ -99,7 +101,6 @@ ol {
   line-height: 23.3px;
   padding-bottom: 5px;
 }
-
 
 .visually-hidden  {
   position: absolute;
@@ -124,8 +125,7 @@ ol {
   appearance: none;
   cursor: pointer;
 }
-
-.search-form__label:hover, 
+ 
 .button:hover, 
 .content__list-item:hover {
   text-decoration: underline;
@@ -140,6 +140,7 @@ ol {
   outline: 1px solid white;
   outline-offset: 2px;
 }
+
 .button:focus-visible {
   outline: 1px solid white;
   outline-offset: 2px;
@@ -183,12 +184,14 @@ ol {
   display: flex;
   width: fit-content;
   gap: 5px;
+  cursor: pointer;
 }
 
 .button {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 700;
   font-size: 18px;
+  height: 34px;
   align-items: center;
   justify-content: center;
   border: 1px solid #ffffff;
@@ -199,12 +202,10 @@ ol {
 
 .search-form__submit-button {
   width: 194px;
-  height: 34px;
 }
 
 .more-button {
   display: block;
-  height: 34px;
   width: 100%;
   margin-top: 30px;
   margin-bottom: 2px;
@@ -213,7 +214,6 @@ ol {
 .content__details {
   grid-area: content__details;
   width: 399px;
-  height: 534px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -227,8 +227,7 @@ ol {
   line-height: 70.5px;
   text-transform: uppercase;
   display: block;
-  padding-top: 3px;
-  
+  padding-top: 3px; 
 }
 
 .content__accent {
@@ -240,7 +239,6 @@ ol {
   overflow-y: scroll;
   position: relative;
   padding: 0 3px 0 3px;
-
 }
 
 .content__card-link:active .content__video-card,
@@ -252,7 +250,6 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  
 }
 
 .content__card-link:focus {
@@ -267,8 +264,7 @@ ol {
 .content__list-item {
   display: block;
   width: 390px;
-  height: 103px;
-  
+  min-height: 103px;
 }
 
 .content__list-item:active {

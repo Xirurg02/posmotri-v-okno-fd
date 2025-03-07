@@ -216,7 +216,7 @@ ol {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 21px;
+  gap: 23px;
 }
 
 .title {

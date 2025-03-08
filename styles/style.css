@@ -90,7 +90,6 @@ ol {
 
 .search-form__fieldset {
   border: none;
-  height: 54px;
 }
 
 .search-form__fieldset-title {
@@ -123,8 +122,10 @@ ol {
   width: 225px;
   appearance: none;
   cursor: pointer;
+  margin: -2px 0 1px 0;
 }
  
+.search-form__checkbox-list:hover,
 .button:hover, 
 .content__list-item:hover {
   text-decoration: underline;
@@ -184,6 +185,7 @@ ol {
   width: fit-content;
   gap: 5px;
   cursor: pointer;
+  height: 26px;
 }
 
 .button {
